@@ -18,8 +18,8 @@ function buildMetadata(sample) {
       metadata.append("p").html(key + ": " + value);
     });  
 
-    // BONUS: Build the Gauge Chart
-    // buildGauge(data.WFREQ);
+    // Build the Gauge Chart
+    buildGauge(data.WFREQ);
   });  
 }
 
@@ -43,13 +43,19 @@ function buildCharts(sample) {
     }];
     
     var bubblelayout = {
-      height: 500,
-      width: 1000,
+      height: 600,
+      width: 1200,
       xaxis: {
         title: {
           text: 'OTU ID'
         }  
-      }
+      },
+      yaxis: {
+        title: {
+          text: 'Sample Count'
+        }  
+      },      
+      title: '<b>Samples per OTU ID</b>'
     }
     
     Plotly.newPlot("bubble", bubbledata, bubblelayout);
@@ -70,8 +76,9 @@ function buildCharts(sample) {
     }];
 
     var pielayout = {
-      height: 600,
-      width: 800
+      height: 500,
+      width: 500,
+      title: '<b>Top 10 Samples</b>'
     };
     
     Plotly.newPlot("pie", piedata, pielayout);
