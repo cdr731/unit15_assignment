@@ -4,4 +4,4 @@ by Christopher Reutz</br>
 
 Includes required charts and optional gauge chart</br>
 Application is located in the 'belly_button_biodiversity' folder</br>
-Heroku app is deployed <a href="http://cdr731-bellybuttonbio.herokuapp.com/"><b>HERE</b></a></br>
+Heroku app is deployed <a href="https://reutz-bellybuttonbio.herokuapp.com/"><b>HERE</b></a></br>
